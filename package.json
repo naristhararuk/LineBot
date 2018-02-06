@@ -1,37 +1,29 @@
 {
-  "name": "linebotpkg",
+  "name": "linebot",
   "version": "1.0.0",
   "description": "Line Bot Example",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "lib/**"
-  ],
+  "main": "reply.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "linebot": "^1.4.1",
+    "nock": "^9.1.6",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node reply.js",
-    "pretest": "eslint index.js lib/**/*.js test/**/*.js",
-    "test": "mocha --timeout 5000 --exit",
-    "lint": "eslint index.js lib/**/*.js test/**/*.js"
+    "start": "node reply.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/naristhararuk/LineBot.git"
   },
   "keywords": [
-    "LINE",
-    "Messaging",
-    "API",
-    "chat",
-    "bot"
+    "Linebot"
   ],
   "author": "Naristhararuk",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/naristhararuk/LineBot/issues"
   },
-  "homepage": "https://github.com/naristhararuk/LineBot#readme",
-  "dependencies": {
-    "express": "4.16.2",
-    "linebot": "^1.4.1"
-  }
+  "homepage": "https://github.com/naristhararuk/LineBot#readme"
 }
