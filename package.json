@@ -7,11 +7,11 @@
     "index.js",
     "lib/**"
   ],
-"scripts": {
-  "start": "node examples/demo.js",
-  "pretest": "eslint index.js lib/**/*.js test/**/*.js",
-  "test": "mocha --timeout 5000 --exit",
-  "lint": "eslint index.js lib/**/*.js test/**/*.js"
+  "scripts": {
+    "start": "node reply.js",
+    "pretest": "eslint index.js lib/**/*.js test/**/*.js",
+    "test": "mocha --timeout 5000 --exit",
+    "lint": "eslint index.js lib/**/*.js test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/naristhararuk/LineBot#readme",
   "dependencies": {
+    "express": "4.16.2",
     "linebot": "^1.4.1"
   }
 }
