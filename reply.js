@@ -1,6 +1,8 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
+const line = require('@line/bot-sdk');
+
 var app = express()
 
 app.use(bodyParser.json())
@@ -92,8 +94,4 @@ function handleMessageEvent(event) {
 
 app.listen(app.get('port'), function () {
   console.log('run GET at port', app.get('port'))
-})
-
-app.listen(app.post('port'), function () {
-  console.log('run POST at port', app.post('port'))
 })
