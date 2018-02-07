@@ -67,7 +67,7 @@ const client = new line.Client(config);
 
 app.post('/message', line.middleware(config), (req, res) => {
   Promise
-      .all(req.body.events.map(handleEvent))
+      .all(req.body.events && req.body.events.map(handleEvent))
       .then((result) => res.json(result));
 });
 
