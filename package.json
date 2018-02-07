@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "linebot": "^1.4.1",
+    "@line/bot-sdk": "^2.0.0",
     "nock": "^9.1.6",
     "request": "^2.83.0"
   },
